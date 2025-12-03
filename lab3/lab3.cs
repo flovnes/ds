@@ -8,8 +8,7 @@
 
         static void FormatNumberAsCurrency(double number)
         {
-            lock (locker)
-            {
+            lock (locker) {
                 Console.WriteLine("A Currency: {0:C}", number);
             }
         }

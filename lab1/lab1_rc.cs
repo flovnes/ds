@@ -1,5 +1,3 @@
-namespace lab1;
-
 class Test
 {
     static readonly double[] original_y = [7.1, 27.8, 62.1, 110, 161];
@@ -51,7 +49,6 @@ class Test
 
     static void ThreadFunction1()
     {
-
         double Xi = 0, Xi2 = 0, XiYi = 0, Yi = 0;
 
         for (int i = 0; i < n; i++)
@@ -80,7 +77,6 @@ class Test
 
     static void ThreadFunction2()
     {
-
         for (int i = 0; i < n; i++)
         {
             y[i] = Math.Log(y[i]);

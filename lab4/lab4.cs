@@ -55,7 +55,7 @@
             }
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
             double a = 1.0;
             double b = 3.0;
@@ -66,12 +66,9 @@
             
             format(12345.6789);
 
-            List<MathOp<double>> opsList = new List<MathOp<double>>();
-            opsList.Add(Add);
-            opsList.Add(Divide);
-            opsList.Add(Multiply);
+            List<MathOp<double>> opsList = [Add, Divide, Multiply];
 
-            List<Thread> threads = new List<Thread>();
+            List<Thread> threads = [];
 
             foreach (MathOp<double> op in opsList) {
                 MathOp<double> currentOp = op; 

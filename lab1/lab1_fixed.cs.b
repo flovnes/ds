@@ -1,4 +1,3 @@
-namespace lab1;
 class Test
 {
     static double[] x = [1, 2, 3, 4, 5];
@@ -19,9 +18,9 @@ class Test
         }
 
         Thread thread1 = new(ThreadFunction1);
-        thread1.Start();
-
         Thread thread2 = new(ThreadFunction2);
+
+        thread1.Start();
         thread2.Start();
 
         thread1.Join(); 
